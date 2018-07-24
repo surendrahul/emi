@@ -53,7 +53,10 @@ header{
 	width: 90%;
 	margin-left: 5%;
 }
+input[type="checkbox"] { -webkit-appearance: checkbox; }
 input[type="radio"] { -webkit-appearance: radio; }
+input[type="submit"], input[type="button"] { -webkit-appearance: button; }
+select { -webkit-appearance:textfield; }
 .inputART{
 	font-size: 25px;
 	padding-left: 20px;
