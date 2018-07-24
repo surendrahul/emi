@@ -57,7 +57,10 @@ header{
 	font-size: 25px;
 	padding-left: 20px;
 	height: 35px;
-	width: 300px;
+	width: 400px;
+}
+#time{
+	width:250px;
 }
 #calculation{
 	height: 22em;
