@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMI </title>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<link rel="stylesheet" type="text/css" href="emi.css">
+	<link rel="icon" type="text/css" href="emi.png">
+	<script type="text/javascript" src="emi.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="calculationOfEMI()">
+	<header>EMI Calculator for Home Loan, Car Loan & Personal Loan</header>
+	<div id="main">
+		<div>
+			<div onclick="loanType(this)" id="homeLoan" class="headType">Home Loan</div>
+			<div onclick="loanType(this)" id="personalLoan" class="headType">Perssonal Loan</div>
+			<div onclick="loanType(this)" id="carLoan" class="headType">Car Loan</div><br>
+		</div>
+		<div class="divART" id="divAmount"><br>
+			loan amount
+			<input type="text" value="2500000" oninput="changeAmount(value)" id="amount" class="inputART" name=""><i class="fa fa-inr" style="font-size:24px; border:1px solid black; padding:7px; background-color: rgb(222,222,222)"></i><br>
+			<input type="range" min="0" max="5000000" value="2500000" step="1000" oninput="changeAmount(value)" id="amountSlider" class="slider" name=""><br>
+		</div>
+		<div class="divART" id="divInterestRate">
+			interest rate
+			<input type="text" id="rate" value="10" class="inputART" oninput="changeRate(value)" name=""><i class="fa fa-percent" style="font-size:24px; border:1px solid black; padding:7px; background-color:  rgb(222,222,222)"></i><br>
+			<input type="range" min="0" max="20" value="10" id="rateSlider" step="0.5" oninput="changeRate(value)" class="slider" name=""><br>
+		</div>
+		<div class="divART" id="divTime">
+			time
+			<input type="text" id="time" class="inputART" value="60"  oninput="changeTime(value)" name="">
+			<input type="radio" class="radio" id="yearRadio" onclick="onYear()" name="timeDuration"> year   
+			<input type="radio" class="radio" id="monthRadio" onclick="onMonth()" checked name="timeduration">month
+			<br>
+			<input type="range" min="0" max="120" id="timeSlider" oninput="changeTime(value)" value="60" class="slider" name=""><br>
+		</div>
+		<div id="calculation">
+			<div id="loanEMI">
+				loan EMI
+				<div id="emi" class="calc">9453</div>
+			</div>
+			<div id="totalInterest">
+				Total Interest Payable
+				<div id="intrest"  class="calc">33586</div>
+			</div>
+			<div id="totalPayment">
+				Total Payment<br>(Principal+Interest)
+				<div id="totalPayable" class="calc">283586</div>
+			</div>
+		</div>
+		<div id="paichart"></div>
+		<div id="stackChart"></div>
+		<div id="intrestTable"></div>
+	</div>
+</body>
+</html>
