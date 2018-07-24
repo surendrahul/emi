@@ -53,6 +53,7 @@ header{
 	width: 90%;
 	margin-left: 5%;
 }
+input[type="radio"] { -webkit-appearance: radio; }
 .inputART{
 	font-size: 25px;
 	padding-left: 20px;
