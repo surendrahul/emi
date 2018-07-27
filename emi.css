@@ -1,7 +1,7 @@
 header{
 	text-align: center;
     font-size: 30px;
-   // padding: 25px;
+    padding: 25px;
 }
 #main{
 	width: 80%;
@@ -232,3 +232,21 @@ td{
         font-size: 80%;
     }
 }
+@media screen and (max-width:380px){
+	.headType{
+		font-size:10px
+		width:25%;
+	}
+	.inputART{
+		width:200px;
+	}
+	#time{
+		width:40px;
+		font-size:16px
+
+	}
+	.calc{
+		font-size:16px;
+	}
+}
+
