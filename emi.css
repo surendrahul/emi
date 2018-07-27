@@ -8,7 +8,7 @@ header{
     border: 3px dashed black;
     margin: auto;
     background-color: rgb(244,244,244);
-    padding-bottom: 7em;
+    padding-bottom: 1em;
     outline: 20px solid rgb(244,244,244);
 }
 .headType{
@@ -53,18 +53,11 @@ header{
 	width: 90%;
 	margin-left: 5%;
 }
-input[type="checkbox"] { -webkit-appearance: checkbox; }
-input[type="radio"] { -webkit-appearance: radio; }
-input[type="submit"], input[type="button"] { -webkit-appearance: button; }
-select { -webkit-appearance:textfield; }
 .inputART{
 	font-size: 25px;
 	padding-left: 20px;
 	height: 35px;
-	width: 340px;
-}
-#time{
-	width:250px;
+	width: 300px;
 }
 #calculation{
 	height: 22em;
@@ -175,4 +168,66 @@ td{
 }
 #thBal{
 	background-color: #FE08C2;
+}
+
+@media screen and (max-width:820px){
+     #main{
+        width:100%;
+        border:none;
+    }
+
+    header{
+        font-size:20px;
+    }
+
+    .inputART{
+    font-size: 25px;
+    padding-left: 10px;
+    height: 35px;
+    width: 150px;
+    }
+
+    .headType{
+        font-size:14px;
+        width:27%;
+        outline:none;
+    }
+
+    .divART{
+        font-size:20px;
+    }
+    
+    #time{
+        width:80px;
+    }
+    #calculation{
+        width:90%;
+    }
+    #paichart{
+        width:80%;
+        position:relative;
+        top:0px;
+        left:10%;
+       // border:1px solid;
+        margin-top:2em;
+        float:none;
+        height: 13em;
+
+    }
+    #intrestTable{
+        width:100%;
+        left:0%;
+        top:-2em;
+
+    }
+    #stackChart{
+        margin-top: 0em;
+        height: 10em;
+    }
+    th{
+        font-size:80%
+    }
+    td{
+        font-size: 80%;
+    }
 }
